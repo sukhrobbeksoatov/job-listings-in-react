@@ -1,0 +1,23 @@
+.badge {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 6px 8px 2px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+
+  &--new {
+    background-color: var(--green);
+  }
+
+  &--featured {
+    background-color: var(--black);
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,109 @@
+/* FONTS */
+@font-face {
+  font-family: "Spartan";
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2)
+    format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* CUSTOM PROPS */
+:root {
+  --body-bg: #effafa;
+  --white: #fff;
+  --green: #5ca5a5;
+  --black: #2b3939;
+  --grey: #7c8f8f;
+  --light-grey: #b7c4c4;
+}
+
+/* GENERAL */
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  background-color: var(--body-bg);
+  font-family: "Spartan", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  margin: 0;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* VISUALLY HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 76px 0 120px;
+
+  @media only screen and (max-width: 576px) {
+    padding: 32px 0 34px;
+  }
+}
