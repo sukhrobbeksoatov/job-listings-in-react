@@ -1,8 +1,6 @@
-import "./App.scss";
-import Header from "./component/header/Header";
-import JobsList from "./component/jobs-list/JobsList";
+import { Header, JobsList } from "./components";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -11,6 +9,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;

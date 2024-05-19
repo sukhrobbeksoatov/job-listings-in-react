@@ -1,5 +1,7 @@
 import "./Header.scss";
 
-export default function Header() {
+const Header = () => {
   return <header className="site-header"></header>;
-}
+};
+
+export default Header;

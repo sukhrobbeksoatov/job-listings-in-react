@@ -1,8 +1,7 @@
 /* FONTS */
 @font-face {
   font-family: "Spartan";
-  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2) format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -10,8 +9,7 @@
 
 @font-face {
   font-family: "Spartan";
-  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2) format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -19,8 +17,7 @@
 
 @font-face {
   font-family: "Spartan";
-  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QytlBfK.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -28,8 +25,7 @@
 
 @font-face {
   font-family: "Spartan";
-  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/spartan/v18/l7gfbjR61M69yt8Z2QKtlA.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -106,4 +102,8 @@ body {
   @media only screen and (max-width: 576px) {
     padding: 32px 0 34px;
   }
+}
+
+.box {
+  background-image: linear-gradient(360deg, #fff, #45afde);
 }

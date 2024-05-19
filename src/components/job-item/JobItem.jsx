@@ -1,21 +1,15 @@
-import Badge from "../badge/Badge";
+import { Badge } from "..";
+
 import "./JobItem.scss";
 
-export default function JobItem({ ...props }) {
+const JobItem = ({ ...props }) => {
   return (
     <li className={`job-item ${props.isFeatured && "job-item--featured"}`}>
-      <img
-        className="job-item__img"
-        src={props.img}
-        alt={props.name}
-        width="88"
-        height="88"
-      />
+      <img className="job-item__img" src={props.img} alt={props.name} width="88" height="88" />
       <div className="job-item__info">
         <div className="job-item__company-badges">
           <h2 className="job-item__company">{props.name}</h2>
-          {props.badges &&
-            props.badges.map((item, i) => <Badge key={i} isNew={item.isNew} />)}
+          {props.badges && props.badges.map((item, i) => <Badge key={i} isNew={item.isNew} />)}
         </div>
         <h3 className="job-item__position">
           <a className="job-item__position-link" href="#">
@@ -41,4 +35,6 @@ export default function JobItem({ ...props }) {
       </div>
     </li>
   );
-}
+};
+
+export default JobItem;

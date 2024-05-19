@@ -1,17 +1,20 @@
 import React from "react";
-import "./JobList.scss";
-import JobItem from "../job-item/JobItem";
-import data from "../../data/data.json";
 
-export default function JobsList() {
+import { JobItem } from "..";
+import list from "../../data/data.json";
+
+import "./JobList.scss";
+
+const JobsList = () => {
   return (
     <section className="job-list">
       <div className="container">
         <ul className="jobs-list__list">
-          {data.list &&
-            data.list.map((item) => <JobItem key={item.id} {...item} />)}
+          {list.length ? list.map(item => <JobItem key={item.id} {...item} />) : null}
         </ul>
       </div>
     </section>
   );
-}
+};
+
+export default JobsList;

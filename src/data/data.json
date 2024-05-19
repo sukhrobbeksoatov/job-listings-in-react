@@ -1,5 +1,4 @@
-{
-  "list": [
+[
   {
     "id": 1,
     "img": "images/photosnap.svg",
@@ -107,8 +106,7 @@
     "badges": [],
     "additional": ["3w ago", "Full Time", "Worldwide"],
     "tags": ["Fullstack", "Midweight", "JavaScript", "Django", "Python"]
-  }
-  ,
+  },
   {
     "id": 10,
     "img": "images/the-air-filter.svg",
@@ -120,4 +118,3 @@
     "tags": ["Frontend", "Junior", "React", "Sass", "JavaScript"]
   }
 ]
-}

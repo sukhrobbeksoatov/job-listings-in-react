@@ -1,9 +1,11 @@
 import "./Badge.scss";
 
-export default function Badge({ isNew }) {
+const Badge = ({ isNew }) => {
   return (
     <span className={`badge ${isNew ? "badge--new" : "badge--featured"}`}>
-      {isNew ? "New!": "Featured"}
+      {isNew ? "New!" : "Featured"}
     </span>
   );
-}
+};
+
+export default Badge;
