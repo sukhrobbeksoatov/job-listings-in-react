@@ -1,10 +1,12 @@
+import cx from "classnames";
+
 import { Badge } from "..";
 
 import "./JobItem.scss";
 
 const JobItem = ({ ...props }) => {
   return (
-    <li className={`job-item ${props.isFeatured && "job-item--featured"}`}>
+    <li className={cx("job-item", props.isFeatured && "job-item--featured")}>
       <img className="job-item__img" src={props.img} alt={props.name} width="88" height="88" />
       <div className="job-item__info">
         <div className="job-item__company-badges">
@@ -28,7 +30,7 @@ const JobItem = ({ ...props }) => {
       <div className="job-item__tags">
         {props.tags &&
           props.tags.map((item, i) => (
-            <span key={i} className="job-item__tag tag">
+            <span className="job-item__tag tag" key={i}>
               {item}
             </span>
           ))}

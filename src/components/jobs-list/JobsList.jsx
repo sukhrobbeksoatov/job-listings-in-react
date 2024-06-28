@@ -10,7 +10,7 @@ const JobsList = () => {
     <section className="job-list">
       <div className="container">
         <ul className="jobs-list__list">
-          {list.length ? list.map(item => <JobItem key={item.id} {...item} />) : null}
+          {!!list.length && list.map(item => <JobItem key={item.id} {...item} />)}
         </ul>
       </div>
     </section>
